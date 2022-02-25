@@ -1,240 +1,193 @@
-*{
-    box-sizing: border-box;
-}
-#contacto{
-    color: rgb(209, 47, 47);
-    text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-#verofertas{
- color: rgb(39, 224, 70);
- text-align: center;
+#frase {
+  text-align: center;
+  position: relative;
+  top: 50px;
 }
 
-#ofertas{
-    display: block;
-    margin: auto;
-    position: absolute;
-    left: 550px;
-    top:200px;
-
-}
-#ofertas2{
-    display: block;
-    margin: auto;
+.titulo {
+  color: rgb(153, 119, 233);
+  text-align: center;
 }
 
-#coming{
-    position: relative;
-    text-align: center;
-    top:20px;
+.menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  text-shadow: 1px 2px 2px rgb(230, 226, 15);
+  gap: 10px;
+  margin-top: 20px;
 }
 
-#video{
-    display: block;
-    margin: auto;
+.copyright {
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+  width: 100%;
+  height: 80px;
 }
 
-#nosotros{
-    text-align: center;
-    color: rgb(94, 22, 228);
-}
-#foto{
-    width: 250px;
+.shop img {
+  width: 40px;
 }
 
-#novedad{
-    text-align: center;
-    color: cadetblue;
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
-#frase{
-    text-align: center;
-    position: relative;
-    top: 50px;
-}
-
-.titulo{
-    color: rgb(153, 119, 233);
-    text-align: center;
-   }
-
-
-.menu{
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    text-align: center;
-    text-shadow:1px 2px 2px rgb(230, 226, 15);
-    gap: 10px;
-    margin-top: 20px;
-
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
-.copyright{
-    position: absolute;
-    bottom: 0;
-    padding: 0 20px;
-    width: 100%;
-    height: 80px;
-
-    
-    
+.descripcion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5px;
+  width: 80%;
+  align-self: center;
 }
 
-
-.shop img{
-    width: 40px;
- 
+.imagen {
+  display: flex;
+  justify-content: center;
 }
 
+.imagen img {
+  width: 80%;
+}
 
+.btn {
+  background-color: rgb(33, 182, 33);
+  padding: 5px 10px;
+  border-radius: 7px;
+  color: white;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: rgb(33, 104, 33);
+}
 
+.formulario {
+  text-align: center;
+}
 
-.container{
-    display: grid;
-    gap: 10px;
+.notificacion {
+  text-align: center;
+  display: flex;
+}
+.ig {
+  width: auto;
+  height: 30px;
+}
+.tw {
+  width: auto;
+  height: 30px;
+}
+.fb {
+  width: auto;
+  height: 30px;
+}
+
+.redes {
+  position: relative;
+  text-align: right;
+  right: 0px;
+  bottom: 0px;
+}
+.redes a {
+  margin: 0px;
+}
+
+.prox {
+  position: relative;
+  top: 150px;
+  left: 30%;
+}
+.volver {
+  color: rgb(33, 135, 182);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.content2 {
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+  background-image: url(https://m.media-amazon.com/images/S/aplus-seller-content-images-us-east-1/ATVPDKIKX0DER/A1UTM5151V9SLH/998fadb5-4fb8-495b-a4dc-434520498cf6._CR0,0,970,600_PT0_SX970__.jpg);
+}
+
+.slider li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center center;
+  background-size: cover;
+  animation: slider 40s linear infinite;
+  -moz-animation: slider 20s linear infinite;
+  -ms-animation: slider 20s linear infinite;
+  -o-animation: slider 20s linear infinite;
+}
+.slider .image1 {
+  background-image: url(https://img.culturacolectiva.com/content_image/2018/11/22/1542845541654-los-bolsos-mas-caros-del-mundo-kors-chain.png);
+  animation-delay: 10s;
+}
+.slider .image2 {
+  background-image: url(https://us.123rf.com/450wm/akz/akz1612/akz161200799/67039395-traje-elegante-moda-femenina-dos-mujeres-en-ropa-de-moda-con-los-bolsos-imagen-de-tonos.jpg?ver=6);
+  animation-delay: 20s;
+}
+.slider .image3 {
+  background-image: url(https://media.istockphoto.com/photos/set-of-summer-womens-bags-picture-id1005529718?k=20&m=1005529718&s=612x612&w=0&h=SVYW8QlUODf5wuY1BFajDi_710TeRIulanNbzJRx4jU=);
+  animation-delay: 30s;
+}
+
+@keyframes slider {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .menu {
     grid-template-columns: repeat(3, 1fr);
-  
-}
-.box{
-    display: flex;
-    flex-direction: column;
-    margin:10px;
-}
-
-.descripcion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5px;
-    width: 80%;
-    align-self: center;
-}
-
-.imagen{
-    display: flex;
-    justify-content: center;    
-}
-
-.imagen img{
-    width: 80%;
-    
-}
-
-.btn{
-  
-        background-color: rgb(33, 182, 33);
-        padding: 5px 10px;
-        border-radius: 7px;
-        color: white;
-        text-decoration: none;
-  
-}
-.btn:hover{
-    background-color: rgb(33, 104, 33);
-}
-
-.formulario{
-    text-align: center;
-}
-
-.notificacion{
-    text-align: center;
-    display: flex;
-}
-.ig{
-    width: auto;
-    height: 30px;
-}
-.tw{
-    width: auto;
-    height: 30px;
-}
-.fb{
-    width: auto;
-    height: 30px;
-}
-
-.redes{
-    
-    position: relative;
-    text-align: right;
-    right:0px;
-    bottom: 0px;
-}
-.redes a{
-    margin: 0px;
-}
-
-.prox{
-   position: relative;
-   top: 150px;
-   left: 30%;
-}
-.volver{
-    color: rgb(33, 135, 182);
-}
-
-*{
-    padding:0px;
-    margin: 0px;
-}
-
-.content2{
-    width: 100%;
-    height: 100%;
-}
-
-.slider{
-    width: 100%;
-    height: 100%;
-    position:fixed;
-    top: 0px;
-    left: 0px;
-    background-position: center center;
-    background-size: cover;
-    z-index: -1;
-    background-image:url(https://m.media-amazon.com/images/S/aplus-seller-content-images-us-east-1/ATVPDKIKX0DER/A1UTM5151V9SLH/998fadb5-4fb8-495b-a4dc-434520498cf6._CR0,0,970,600_PT0_SX970__.jpg);
-}
-
-.slider li{
-    width:100%;
-    height:100%;
-    position: absolute;
-    background-position: center center;
-    background-size: cover;
-    animation: slider 40s linear infinite;
-    -moz-animation: slider 20s linear infinite;
-    -ms-animation: slider 20s linear infinite;
-    -o-animation:slider 20s linear infinite ;
-
-}
-.slider .img1{
-    background-image: url(https://img.culturacolectiva.com/content_image/2018/11/22/1542845541654-los-bolsos-mas-caros-del-mundo-kors-chain.png);
-    animation-delay:10s;
-}
-.slider .img2{
-    background-image: url(https://us.123rf.com/450wm/akz/akz1612/akz161200799/67039395-traje-elegante-moda-femenina-dos-mujeres-en-ropa-de-moda-con-los-bolsos-imagen-de-tonos.jpg?ver=6);
-    animation-delay: 20s;
-}
-.slider .img3{
- background-image: url(https://media.istockphoto.com/photos/set-of-summer-womens-bags-picture-id1005529718?k=20&m=1005529718&s=612x612&w=0&h=SVYW8QlUODf5wuY1BFajDi_710TeRIulanNbzJRx4jU=);
- animation-delay:30s;
-}
-
-@keyframes slider{
-    0%{opacity:0; animation-timing-function:ease-in; }
-    10%{ opacity:1; animation-timing-function: ease-out;}
-    25%{opacity: 1; transform: scale(1);}
-    50%{opacity: 0; transform: scale(2);}
-    100%{opacity: 0;}
-}
-
-@media screen and (max-width:480px)  {  
-    .container{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .menu{
-        grid-template-columns: repeat(3, 1fr);
-    }
+  }
 }
